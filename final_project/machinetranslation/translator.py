@@ -10,7 +10,7 @@ load_dotenv()
 apikey = os.environ['apikey']
 url = os.environ['url']
 
-authenticator =IAMAuthenticator("Ibu_XE6JrOL-7BhwZHMlLLBYycvfp3XVPBOQ5x3H5lQM")
+authenticator =IAMAuthenticator("apikey goes here")
 language_translator = LanguageTranslatorV3(version = '2018-05-01', authenticator=authenticator)
 language_translator.set_service_url('https://api.us-south.language-translator.watson.cloud.ibm.com/instances/8938ff7e-094f-402e-bd08-d42f85a0ae25')
 
